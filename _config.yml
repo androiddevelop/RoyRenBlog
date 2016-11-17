@@ -1,4 +1,4 @@
-######################站点全局信息，需要部分修改#########################
+######################Global Info#########################
 # Site settings
 title: Developer Roy
 header-img: img/home-bg.jpg
@@ -9,7 +9,7 @@ github_username:  rxyknight
 zhihu_username: codeboy
 disqus_id: http-developerroy-com
 
-##########################上述信息需要您修改########3####################
+##########################Global Info End#############################
 
 # Where things are
 source:       .
