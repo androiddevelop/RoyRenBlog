@@ -37,7 +37,12 @@ comments: true
 				{{ content }}
 
                 <hr>
+                <div class="share">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
 
+
+                <hr>
 
                 <!-- 多说 Share start -->
                 <!--<style>-->
@@ -91,7 +96,9 @@ comments: true
                     <!--<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>-->
                 <!--</div>-->
                 <!-- 多说评论框 end -->
-                <div id="disqus_thread"></div>
+                {% if page.comments %}
+                    <div id="disqus_thread"></div>
+                {% endif %}
 
             </div>
         </div>
