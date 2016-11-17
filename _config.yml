@@ -1,13 +1,13 @@
 ######################站点全局信息，需要部分修改#########################
 # Site settings
-title: Roy Ren's Blog
+title: Developer Roy
 header-img: img/home-bg.jpg
 email: renxiangyu16@hotmail.com
 url: "http://developerroy.com"
-description: "编码生涯的点点滴滴"
-github_username:  androiddevelop
+description: "I am Roy, I am developer"
+github_username:  rxyknight
 zhihu_username: codeboy
-duoshuo_id: developerroy
+disqus_id: developerroy
 
 ##########################上述信息需要您修改########3####################
 
@@ -57,7 +57,7 @@ baseurl: "" # does not include hostname
 permalink: pretty
 paginate: 16
 paginate_path: /page/:num
-timezone: Asia/Shanghai
+timezone: null
 
 quiet:    false
 defaults: []
