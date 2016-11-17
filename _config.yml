@@ -1,9 +1,9 @@
 ######################站点全局信息，需要部分修改#########################
 # Site settings
-title: 小胖轩 
+title: Roy Ren's Blog
 header-img: img/home-bg.jpg
-email: app@codeboy.me
-url: "http://127.0.0.1"
+email: renxiangyu16@hotmail.com
+url: "http://developerroy.com"
 description: "编码生涯的点点滴滴"
 github_username:  androiddevelop
 zhihu_username: codeboy
