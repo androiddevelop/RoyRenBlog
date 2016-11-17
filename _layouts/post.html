@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <!-- Post Header -->
@@ -39,36 +40,36 @@ layout: default
 
 
                 <!-- 多说 Share start -->
-                <style>
-                    .ds-share{
-                        text-align: right;
-                    }
-                    /* 移动端暂时不显示 */
-                    @media only screen and (max-width: 700px) {
-                        .ds-share {
+                <!--<style>-->
+                    <!--.ds-share{-->
+                        <!--text-align: right;-->
+                    <!--}-->
+                    <!--/* 移动端暂时不显示 */-->
+                    <!--@media only screen and (max-width: 700px) {-->
+                        <!--.ds-share {-->
 
-                        }
-                    }
-                </style>
+                        <!--}-->
+                    <!--}-->
+                <!--</style>-->
 
-                <div class="ds-share"
-                    data-thread-key="{{page.id}}" data-title="{{page.title}}"
-                    data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-                    data-content="{{ content | strip_html | truncate:80 }} | 小胖轩，玄恒 的个人博客"
-                    data-url="{{site.url}}{{page.url}}">
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
+                <!--<div class="ds-share"-->
+                    <!--data-thread-key="{{page.id}}" data-title="{{page.title}}"-->
+                    <!--data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"-->
+                    <!--data-content="{{ content | strip_html | truncate:80 }} | 小胖轩，玄恒 的个人博客"-->
+                    <!--data-url="{{site.url}}{{page.url}}">-->
+                    <!--<div class="ds-share-inline">-->
+                      <!--<ul  class="ds-share-icons-16">-->
 
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-        				<li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div>
+                        <!--<li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>-->
+        				<!--<li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>-->
+                        <!--<li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>-->
+                        <!--<li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>-->
+                      <!--</ul>-->
+                      <!--<div class="ds-share-icons-more">-->
+                      <!--</div>-->
+                    <!--</div>-->
+                <!--<hr>-->
+                <!--</div>-->
                 <!-- 多说 Share end-->
 
 
@@ -86,10 +87,12 @@ layout: default
                 </ul>
 
                 <!-- 多说评论框 start -->
-                <div class="comment">
-                    <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
-                </div>
+                <!--<div class="comment">-->
+                    <!--<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>-->
+                <!--</div>-->
                 <!-- 多说评论框 end -->
+                <div id="disqus_thread"></div>
+
             </div>
         </div>
     </div>
@@ -98,16 +101,35 @@ layout: default
 
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"{{site.duoshuo_id}}"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
+<!--<script type="text/javascript">-->
+<!--var duoshuoQuery = {short_name:"{{site.duoshuo_id}}"};-->
+    <!--(function() {-->
+        <!--var ds = document.createElement('script');-->
+        <!--ds.type = 'text/javascript';ds.async = true;-->
+        <!--ds.src = '//static.duoshuo.com/embed.js';-->
+        <!--ds.charset = 'UTF-8';-->
+        <!--(document.getElementsByTagName('head')[0]-->
+         <!--|| document.getElementsByTagName('body')[0]).appendChild(ds);-->
+    <!--})();-->
+<!--</script>-->
+<!-- 多说公共JS代码 end -->
+<script>
+
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//developerroy-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<!-- 多说公共JS代码 end -->
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
