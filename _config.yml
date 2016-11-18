@@ -58,7 +58,7 @@ baseurl: "" # does not include hostname
 permalink: pretty
 paginate: 16
 paginate_path: /page/:num
-timezone: null
+timezone: Australia/Sydney
 
 quiet:    false
 defaults: []
