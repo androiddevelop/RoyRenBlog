@@ -9,6 +9,7 @@
 1. 安装jeykll
 
 	gem install jekyll
+	
 	gem install jekyll-paginate
 
 2. 将CodeboyBlog复制到服务器(部署到github.io的方式自行搜索)。
